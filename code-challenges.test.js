@@ -130,26 +130,23 @@ const vowelTester3 = "challenges"
 // a) Create a test with expect statements for each of the variables provided.
 
 // JEST Test
-describe(firstVowel, () => {
-    it("returns the index location of the first vowel in each each const", () => {
-        expect(firstVowel(vowelTester1)).toEqual(1)
-        expect(firstVowel(vowelTester2)).toEqual(0)
-        expect(firstVowel(vowelTester3)).toEqual(2)
-    })
-})
+// describe(firstVowel, () => {
+//     it("returns the index location of the first vowel in each each const", () => {
+//         expect(firstVowel(vowelTester1)).toEqual(1)
+//         expect(firstVowel(vowelTester2)).toEqual(0)
+//         expect(firstVowel(vowelTester3)).toEqual(2)
+//     })
+// })
 
 // This test, like the others above, returns a good failure, in that it runs the test and recognizes that the const firstVowel is not yet defined.  Specifically, the error reads that the const firstVowel cannot be run before initialization.
 
 // b) Create the function that makes the test pass.
-const vowels = ("a", "e", "i", "o", "u")
-const firstVowel = (x) => {
+
+var firstVowel = (x) => {
     for (i = 0; i < x.length; i++) {
-        if (i.charAt[0] = (vowels))
-            console.log()
-    } else if {
-        if (i.charAt[1] = (vowels))
-    } else if {
-        i.charAt = 
-    }  
+        if (x.charAt(i).match(/[aeiou]/))
+            return i
+    } 
     
 }
+console.log(firstVowel(vowelTester1))
